@@ -1,0 +1,22 @@
+<section class="hero is-sucess">
+<div class="hero-body">
+<div class="container">
+<h1 class="title">
+大会情報
+</h1>
+</div>
+</div>
+</section>
+
+<%= form_for @event do |f|%>
+<%= f.label :title %>
+<%= f.text_field :title %>
+
+<%= f.label :body %>
+<%= f.text_area :body %>
+
+<%= f.label :image %>
+<%= f.attachment_field :image %>
+
+<%= f.submit %>
+<% end %>
